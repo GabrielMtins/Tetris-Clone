@@ -99,10 +99,10 @@ void gameLoop(){
 void game(){
     init();
     gameLoop();
-    close();
+    gameQuit();
 }
 
-void close(){
+void gameQuit(){
     SDL_DestroyRenderer(render);
     SDL_DestroyWindow(window);
 }

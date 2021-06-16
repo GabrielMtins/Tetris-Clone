@@ -20,7 +20,7 @@ double minLastTimeFall = 0.3;
 */
 
 void input_t(tetromino* t){
-    Uint8* currentKeyStates = SDL_GetKeyboardState(NULL);
+    const uint8_t* currentKeyStates = SDL_GetKeyboardState(NULL);
     if(currentKeyStates[SDL_SCANCODE_A]) t->currentAction = LEFT_ACTION;
     if(currentKeyStates[SDL_SCANCODE_D]) t->currentAction = RIGHT_ACTION;
     if(currentKeyStates[SDL_SCANCODE_E]) t->currentAction = ROTATION_ACTION;

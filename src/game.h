@@ -11,6 +11,6 @@ void gameLoop();
 
 void game();
 
-void close();
+void gameQuit();
 
 #endif
